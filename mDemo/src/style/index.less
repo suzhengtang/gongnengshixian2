@@ -1,0 +1,142 @@
+@import "normalize";
+@import "variable";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  border:none;
+  list-style: none;
+}
+
+.login{
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  .login-title{
+    .h(44);
+    background-color: #efeff0;
+    text-align: center;
+    h4{
+      .fs(17);
+      .lh(44);
+      color: #333;
+    }
+  }
+
+  .login-content{
+    .mt(200);
+    text-align: center;
+    position: relative;
+    form{
+      text-align: center;
+      input{
+        width: 90%;
+        .h(50);
+        background-color: #efeff0;
+        .pl(10);
+        box-sizing: border-box;
+        .fs(14);
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        outline:none;
+      }
+    }
+    .btn-regist{
+      width: 90%;
+      .h(45);
+      border: 1px solid #ccc;
+      border-radius: 45px;
+      text-align: center;
+      .lh(45);
+      display: inline-block;
+      text-decoration: none;
+      .fs(16);
+      color: #666;
+      .mt(220);
+    }
+    .btn-have{
+      color: #aaa;
+      font-size: 14px;
+      position: absolute;
+      .right(20);
+      .top(130)
+    }
+  }
+}
+
+
+//成功登录界面
+.success-content{
+  .mt(160);
+  ul{
+    width: 100%;
+    li{
+      .h(50);
+      background-color: #fff;
+      border-bottom: 1px solid #eee;
+      .fs(14);
+      .lh(50);
+      .pl(30);
+      box-sizing: border-box;
+    }
+    li:first-child{
+      border-top: 1px solid #eee;
+      position: relative;
+      .open{
+        .w(40);
+        .h(20);
+        border-radius: 20px;
+        border: 1px solid #eee;
+        position: absolute;
+        .top(13);
+        .right(20);
+        .cel{
+          display: inline-block;
+          .w(14);
+          .h(14);
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+        .cel-left{
+          background-color: #ccc;
+          .left(4);
+        }
+        .cel-right{
+          background-color: #81c589;
+          .left(20)
+        }
+      }
+    }
+  }
+}
+
+//底部标签栏
+.success-tarbar{
+  width: 100%;
+  .h(50);
+  background-color: #f7f7f7;
+  position: fixed;
+  .left(0);
+  .bottom(0);
+  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li{
+    width: 25%;
+    .h(50);
+    text-align: center;
+    .lh(50);
+    .fs(14);
+    color: #888;
+  }
+  li:first-child{
+    color: #3879d9;
+  }
+}
+

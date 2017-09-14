@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".open").click(function(){$(".open .cel").hasClass("cel-right")?$(".open .cel").removeClass("cel-right"):$(".open .cel").addClass("cel-right"),$(".open .cel").hasClass("cel-right")?console.log("打开状态"):console.log("关闭状态")})});
